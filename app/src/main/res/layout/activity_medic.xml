@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/txtview_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Welcome to Medical Personnal"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="30sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtview_second"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="Welcome to the Hospital Management Systems App"
+            android:textAlignment="center"
+            android:layout_below="@id/txtview_main">
+        </TextView>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/View_Users"
+            android:text="View Users"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/txtview_second">
+        </Button>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Medic_login"
+            android:text="Medical Personnal"
+            android:layout_below="@+id/View_Users">
+        </Button>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Doc_login"
+            android:text="Doctors"
+            android:layout_below="@+id/Medic_login">
+        </Button>
+
+    </RelativeLayout>
+
+</ScrollView>

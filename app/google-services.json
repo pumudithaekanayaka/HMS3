@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533831690873",
+    "project_id": "hms3-4b255",
+    "storage_bucket": "hms3-4b255.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533831690873:android:e2ea5f25a843d1f73bc2a8",
+        "android_client_info": {
+          "package_name": "ati.sn0w_w01f.hms3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533831690873-9ahiq94dqqnunfc06l2r2o7k7dijkttv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPlmTZIjKire8kX6QEGdT9ug5YQc4q3rI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533831690873-9ahiq94dqqnunfc06l2r2o7k7dijkttv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

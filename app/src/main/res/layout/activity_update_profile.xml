@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/update_profile_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:text="Update your profile"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/border"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:id="@+id/RL_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewName"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/update_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewName"
+                    android:padding="6dp"
+                    android:text="First Name" />
+
+                <View
+                    android:id="@+id/divider_name"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_first_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_update_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_first_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageViewName"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_Lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/RL_name"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewLastName"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/update_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewLastName"
+                    android:padding="6dp"
+                    android:text="Last Name" />
+
+                <View
+                    android:id="@+id/divider_last_name"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_last_name"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_update_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_last_name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageViewLastName"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_natid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/RL_Lname"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewnatid"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_id_card" />
+
+                <TextView
+                    android:id="@+id/update_natid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewnatid"
+                    android:padding="6dp"
+                    android:text="National ID Number" />
+
+                <View
+                    android:id="@+id/divider_natid"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_natid"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_update_natid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_natid"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageViewnatid"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL_natid"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewDoB"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_birthday" />
+
+                <TextView
+                    android:id="@+id/update_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewDoB"
+                    android:padding="6dp"
+                    android:text="Date of Birth (dd/mm/yyyy)" />
+
+                <View
+                    android:id="@+id/divider_dob"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_dob"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_update_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_dob"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:focusable="false"
+                    android:layout_toEndOf="@id/imageViewDoB"
+                    android:background="@android:color/transparent"
+                    android:inputType="date"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL_dob"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewGender"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_gender" />
+
+                <TextView
+                    android:id="@+id/update_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewGender"
+                    android:padding="6dp"
+                    android:text="Gender" />
+
+                <View
+                    android:id="@+id/divider_gender"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_gender"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_update_profile_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_gender"
+                    android:layout_toEndOf="@id/imageViewGender"
+                    android:contentDescription=""
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/update_radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Male"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/update_radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/purple_500"
+                        android:text="Female"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL_gender"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewMobile"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_mobile" />
+
+                <TextView
+                    android:id="@+id/update_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewMobile"
+                    android:padding="6dp"
+                    android:text="Conatct" />
+
+                <View
+                    android:id="@+id/divider_mobile"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_contact"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_update_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_contact"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageViewMobile"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/RL_mobile"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewAddress"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/update_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewAddress"
+                    android:padding="6dp"
+                    android:text="Address" />
+
+                <View
+                    android:id="@+id/divider_address"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_address"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_update_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_address"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageViewAddress"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPostalAddress"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_blood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/RL_address"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/imageViewblood"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_blood_bag" />
+
+                <TextView
+                    android:id="@+id/update_blood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewblood"
+                    android:padding="6dp"
+                    android:text="Blood Group" />
+
+                <View
+                    android:id="@+id/divider_blood"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/update_blood"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/editText_update_blood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/update_blood"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/imageViewblood"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_update_profile"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL_blood"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Update Profile"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_profile_upload_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_update_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:text="Upload Image" />
+
+            <TextView
+                android:id="@+id/textView_profile_update_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_update_profile"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:text="Update E-mail" />
+
+            <ProgressBar
+                android:id="@+id/update_progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
